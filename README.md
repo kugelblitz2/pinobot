@@ -12,4 +12,14 @@ to install dependencies. Then,
 
 to start pinobot.
 
+## Running as a service
+Change the path in `pinobot.service` to the location of your `bot.py` file
+
+    sudo pip3 install -r requirements
+    sudo mv ./pinobot.service /etc/systemd
+    sudo systemctl daemon-reload
+    sudo systemctl enable pinobot
+    sudo systemctl start pinobot
+
+
 **Compatibility Notice: Runs on all real (UNIX) operating systems. May or may not work on Windows**

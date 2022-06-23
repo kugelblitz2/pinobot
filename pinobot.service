@@ -1,0 +1,9 @@
+[Unit]
+Description=Pinosaur Commit Patrol
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/kugelblitz/pinobot/bot.py
+[Install]
+WantedBy=multi-user.target
